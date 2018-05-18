@@ -1,0 +1,118 @@
+.container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    .header {
+        height: 60px;
+        line-height: 60px;
+        background: #3c8dbc;
+        color: #fff;
+        .userinfo {
+            text-align: right;
+            padding-right: 35px;
+            float: right;
+            .userinfo-inner {
+                cursor: pointer;
+                color: #fff;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin: 10px 0px 10px 10px;
+                    float: right;
+                }
+            }
+        }
+        .logo {
+            height: 60px;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .txt {
+                color: #fff;
+            }
+            a {
+                color: #fff;
+                text-decoration: none
+            }
+        }
+        .logo-width {
+            width: 230px;
+            background: #33769c;
+        }
+        .logo-collapse-width {
+            width: 64px;
+            background: #33769c;
+        }
+        .tools {
+            padding: 0px 23px;
+            width: 14px;
+            height: 60px;
+            line-height: 60px;
+            cursor: pointer;
+        }
+        .breadcrumb-container {
+            .breadcrumb-inner span {
+                display: inline-block;
+                line-height: 60px;
+                color: #fff;
+            }
+        }
+    }
+    .main {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        bottom: 0px;
+        overflow: hidden;
+        aside {
+            flex: 0 0 230px;
+            width: 230px;
+            height: 100%;
+            .el-menu {
+                height: 100%;
+                border-right: 0px;
+                .fa {
+                    padding-left: 5px;
+                }
+                i {
+                    color: #fff;
+                }
+            }
+            .collapsed {
+                width: 64px;
+                background: #2b3335;
+                .item {
+                    position: relative;
+                }
+                .submenu {
+                    position: absolute;
+                    top: 0px;
+                    left: 64px;
+                    z-index: 99999;
+                    height: auto;
+                    display: none;
+                }
+            }
+        }
+        .menu-collapsed {
+            flex: 0 0 64px;
+            width: 64px;
+        }
+        .menu-expanded {
+            flex: 0 0 230px;
+            width: 230px;
+        }
+        .content-container {
+            flex: 1;
+            padding: 20px 0px;
+            .content-wrapper {
+                overflow-y: auto;
+                background-color: #fff;
+                box-sizing: border-box;
+                padding: 15px 20px 0;
+            }
+        }
+    }
+}
